@@ -6,7 +6,7 @@ import requests
 
 
 # Get API key from environment variables
-api_key = st.secrets('OPENWEATHERMAP_API_KEY')
+api_key = st.secrets["OPENWEATHERMAP_API_KEY"]
 
 
 
