@@ -10,6 +10,11 @@ load_dotenv()
 # Get API key from environment variables
 api_key = os.getenv('OPENWEATHERMAP_API_KEY')
 
+if api_key:
+    st.write(f"My API key is: {api_key}")
+else:
+    st.error("API Key not found. Please check your .env file.")
+
 # Function to display Home page
 def display_home():
     st.balloons()
