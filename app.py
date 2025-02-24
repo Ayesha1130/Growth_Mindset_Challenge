@@ -117,8 +117,8 @@ def display_weather():
 st.markdown("""
     <style>
     body {
-        background-color: black;  /* Black background for the whole body */
-        color: white;  /* Set text color to white for contrast */
+        background-color: #121212;  /* Dark background for the body */
+        color: #e0e0e0;  /* Light text color for readability */
     }
 
     .stButton > button {
@@ -139,7 +139,7 @@ st.markdown("""
         overflow: hidden;            /* Hide overflow */
         transition: 0.3s;           /* Add transition effect on hover */
         text-align: center;         /* Text alignment */
-        font-size: 100px;            /* Font size */
+        font-size: 18px;            /* Font size adjusted for mobile */
         cursor: pointer;           /* Pointer cursor on hover */
         transition: background-color 0.3s, transform 0.2s;
     }
@@ -149,8 +149,26 @@ st.markdown("""
         transform: scale(1.1);       /* Slightly increase size on hover */
     }
 
+    /* Responsive design for mobile */
+    @media (max-width: 768px) {
+        .stButton > button {
+            font-size: 18px;  /* Font size for mobile */
+            padding: 10px 20px; /* Adjust padding for mobile */
+            width: 100%; /* Button full width */
+        }
+
+        img {
+            width: 80%; /* Reduce image size for mobile */
+            height: auto;
+        }
+
+        body {
+            font-size: 14px; /* Smaller font for better readability */
+        }
+    }
     </style>
 """, unsafe_allow_html=True)
+
 
 # Sidebar
 st.sidebar.title("What do you want to explore today 🤔")
