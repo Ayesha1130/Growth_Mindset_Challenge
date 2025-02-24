@@ -2,13 +2,11 @@ import streamlit as st
 import altair as alt
 import pandas as pd
 import requests
-import os
-from dotenv import load_dotenv
 
-load_dotenv()
+
 
 # Get API key from environment variables
-api_key = os.getenv('OPENWEATHERMAP_API_KEY')
+api_key = st.secrets('OPENWEATHERMAP_API_KEY')
 
 
 
