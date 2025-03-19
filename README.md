@@ -29,4 +29,15 @@ The "Growth Mindset Challenge" app is designed to encourage learning and persona
 1. Clone the repository to your local machine.
    
    ```bash
-   git clone <repository_url>
+   git clone <https://github.com/Ayesha1130/Growth_Mindset_Challenge.git>
+
+cd <project_folder>
+pip install -r requirements.txt
+
+[OPENWEATHERMAP_API_KEY]
+value = "<your_api_key>"
+
+streamlit run app.py
+
+
+
